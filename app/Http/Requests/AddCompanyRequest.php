@@ -26,7 +26,7 @@ class AddCompanyRequest extends FormRequest
         return [
             'name' => 'required | min:5',
             'address' => 'min:5',
-            'logo' => 'required'
+            'logo' => 'required | image'
         ];
     }
 }

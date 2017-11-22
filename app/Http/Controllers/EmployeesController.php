@@ -23,7 +23,7 @@ class EmployeesController extends Controller
 
     public function create()
     {
-        $companies = Company::pluck('name', 'id');
+        $companies = $this->company->pluck('name', 'id');
         return view('employees.addEmploy', compact('companies'));
     }
 
@@ -42,7 +42,7 @@ class EmployeesController extends Controller
     public function edit($id)
     {
         $employee=$this->employee->where('id', $id)->first();
-        $companies = Company::pluck('name', 'id');
+        $companies = $this->company->pluck('name', 'id');
         return view('employees.editEmploy', compact('employee', 'companies'));
     }
 

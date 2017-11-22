@@ -8,7 +8,6 @@
         <img src={{asset('storage/'.$company->logo)}} alt="Logotipas"> <br>
         {{$company->address}}
 
-
         <div class="mt-30">
             <h4>Kompanijos darbuotojai:</h4>
 
@@ -16,5 +15,7 @@
                 {{$employee->name}}<br>
             @endforeach
         </div>
+        <br><br>
+        <a href="{{url('admin/companies')}}">Grįžti į kompanijų sąrašą</a>
     </div>
 @stop

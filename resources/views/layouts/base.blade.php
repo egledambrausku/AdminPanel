@@ -64,6 +64,10 @@
             margin-top:300px;
         }
 
+        .mt-30 {
+            margin-top: 30px;
+        }
+
         h3 {
             color:darkgreen;
         }
@@ -74,10 +78,6 @@
 
         img {
             height: 100px;
-        }
-
-        .mt-30 {
-            margin-top: 30px;
         }
 
         form{

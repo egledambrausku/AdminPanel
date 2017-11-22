@@ -10,7 +10,11 @@ class Company extends Model
 
     protected $fillable=['name', 'address', 'logo'];
 
-   public function getFile(){
-       
+   public function saveFile(){
+       $logo=request()->file('logo');
+       $storagePath=storage_path('app/public');
+       $originalName=$logo->getClientOriginalName();
+       $logo->move($storagePath, $originalName);
+       return $originalName;
    }
 }

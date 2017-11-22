@@ -12,18 +12,13 @@
     @endif
 
     {!! Form::open(array('url' => '/admin/companies', 'files' => true ))!!}
-    Kompanijos pavadinimas:
-    <br/>
-    {!! Form::text('name') !!}
-    <br/><br/>
-    Adresas:
-    <br/>
-    {!! Form::text('address') !!}
-    <br/><br/>
-    Logotipas
-    <br/>
-    {!! Form::file('logo') !!}
-    <br/><br/>
+    Kompanijos pavadinimas: <br/>
+    {!! Form::text('name') !!}<br/><br/>
+    Adresas:<br/>
+    {!! Form::text('address') !!}<br/><br/>
+    Logotipas<br/>
+    {!! Form::file('logo') !!}<br/><br/>
+
     {!! Form::submit('Saugoti') !!}
     {!! Form::close() !!}
 
